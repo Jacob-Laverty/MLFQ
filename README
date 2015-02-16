@@ -1,1 +1,9 @@
-MLFQ Project
+MFQ Project
+
+Compilation
+  cd src/
+  make install
+
+Running
+  cd src/
+  ./simulation
