@@ -1,12 +1,4 @@
-Compile simple project via make
-Have a main start up different aspects of the simulation
-Aspects
-  - Interrupts / Message passing
-  - Devices
-  - CPU
-  - RAM
-  - CPU Scheduler
-  - MTS (Something to parse the input and place processes in RAM)
-  - Qs
-
-Throw an interrupt when a process is placed in "RAM"
+Build out REGEX's for parsing the input file
+Build a PCB from the input
+Store the PCBs in a heap
+Sort the heap

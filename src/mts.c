@@ -7,12 +7,17 @@ struct Node {
 };
 
 
-int mts_start() {
+int mts_start(char* filelocation) {
   printf("Hello from the MTS\n");
 
   int n;
+
+  yyin = fopen(filelocation, "r");
   while(n=yylex()) {
-    printf("%d %s\n", n, yytext);
+    switch(n) {
+      case QUANTUM:
+        printf("Received a time quantum\n");
+    }
   }
 
   return 0;

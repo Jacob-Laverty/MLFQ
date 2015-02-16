@@ -1,10 +1,20 @@
 #include "simulation.h"
 
-int main() {
+int main(int argc, char **argv) {
   printf("Hello world\n");
-  mts_start();
+
+  filelocation = NULL;
+
+  opterr = 0;
+
+  int c;
+  while((c = getopt(argc, argv, "f:")) != -1) {
+    switch(c) {
+      case 'f':
+          filelocation = optarg;
+    }
+  }
+
+  mts_start(filelocation);
   return 0;
 }
-
-int main();
-

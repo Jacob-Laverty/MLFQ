@@ -21,13 +21,14 @@
 
 int yylex();
 extern char* yytext;
+extern FILE* yyin;
 
 typedef struct Node node;
 
 // Starts the parsing of the input file
 // Builds out each process structure and places it into a heap node
 // at the end of completion the heap is sorted
-int mts_start();
+int mts_start(char* filelocation);
 
 //Sorts the process based on arrival time
 void heap_sort();
