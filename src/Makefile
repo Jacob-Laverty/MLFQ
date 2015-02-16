@@ -1,28 +1,40 @@
 CC = gcc
 CFLAGS = -Wall -g
 
+LEXC=lex
+LEX = lex.yy.c
+
 IDIR = ./include
 INCLUDES = -I$(IDIR)
 
-SRCS = simulation.c
+LANGUAGE = $(IDIR)/lang.l
+
+SRCS = simulation.c mts.c
 
 OBJDIR=./obj
-OBJECTS = $(OBJDIR)/$(SRCS:.c=.o)
+OBJECTS = $(SRCS:.c=.o)
 
 
 MAIN = simulation
-
+RULES = rules.o
 install: $(MAIN)
+	@mv *.o $(OBJDIR)
 	@echo Simulation compiled
 
-$(MAIN): $(OBJECTS)
-	$(CC) $(CFLAGS) $(INCLUDES) -o $(MAIN) $(OBJECTS) 
+$(MAIN): $(RULES) $(OBJECTS)
+	$(CC) $(CFLAGS) $(INCLUDES) -o $(MAIN) $(OBJECTS) $(RULES)
 
-$(OBJDIR)/%.o: %.c 
+.c.o:
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
+$(RULES): $(LEX) lex.yy.c
+	$(CC) $(CFLAGS) -o $@ -c $^
+
+$(LEX): 
+	$(LEXC) $(LANGUAGE)
+
 clean:
-	$(RM) $(OBJDIR)/*.o *~ $(MAIN)
+	$(RM) $(LEX) $(OBJDIR)/*.o *~ $(MAIN)
 
 depend: $(SRCS)
 	makedepend $(INCLUDES) $^

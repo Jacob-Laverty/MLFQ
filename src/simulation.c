@@ -1,8 +1,10 @@
 #include "simulation.h"
 
-main() {
-  printf("Hello World");
+int main() {
+  printf("Hello world\n");
+  mts_start();
   return 0;
 }
 
-main();
+int main();
+
