@@ -9,7 +9,7 @@ INCLUDES = -I$(IDIR)
 
 LANGUAGE = $(IDIR)/lang.l
 
-SRCS = simulation.c mts.c
+SRCS = simulation.c mts.c burst.c pcb.c timer.c
 
 OBJDIR=./obj
 OBJECTS = $(SRCS:.c=.o)
@@ -17,6 +17,7 @@ OBJECTS = $(SRCS:.c=.o)
 
 MAIN = simulation
 RULES = rules.o
+
 install: $(MAIN)
 	@mv *.o $(OBJDIR)
 	@echo Simulation compiled
@@ -34,7 +35,7 @@ $(LEX):
 	$(LEXC) $(LANGUAGE)
 
 clean:
-	$(RM) $(LEX) $(OBJDIR)/*.o *~ $(MAIN)
+	$(RM) $(LEX) ./*.o $(OBJDIR)/*.o *~ $(MAIN)
 
 depend: $(SRCS)
 	makedepend $(INCLUDES) $^

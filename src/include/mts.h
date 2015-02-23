@@ -13,9 +13,13 @@
  *
  * 
  */
+#ifndef MTS_H
+#define MTS_H
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "tokens.h"
+#include "pcb.h"
 
 #define CREATE 0
 
@@ -23,7 +27,13 @@ int yylex();
 extern char* yytext;
 extern FILE* yyin;
 
-typedef struct Node node;
+typedef struct NodeStruct {
+  PCB* pcb;
+  struct NodeStruct* next;
+} Node; 
+
+Node *head;
+Node *curr;
 
 // Starts the parsing of the input file
 // Builds out each process structure and places it into a heap node
@@ -31,7 +41,7 @@ typedef struct Node node;
 int mts_start(char* filelocation);
 
 //Sorts the process based on arrival time
-void heap_sort();
+void print_list();
 
 // Does MTS on tick
 // This is when a process is to "arrive"
@@ -42,5 +52,5 @@ void mts_tick();
 
 // Handles MTS events
 // Pushes a process into the ready Q when it "arrives"
-void mts_event(int event, node *process);
-
+void mts_event(int event, Node *process);
+#endif

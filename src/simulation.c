@@ -1,4 +1,5 @@
 #include "simulation.h"
+#include "timer.h"
 
 int main(int argc, char **argv) {
   printf("Hello world\n");
@@ -16,5 +17,6 @@ int main(int argc, char **argv) {
   }
 
   mts_start(filelocation);
+  timer_start();
   return 0;
 }
