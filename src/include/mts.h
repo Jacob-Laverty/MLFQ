@@ -20,6 +20,7 @@
 #include <stdlib.h>
 #include "tokens.h"
 #include "pcb.h"
+#include "scheduler.h"
 
 #define CREATE 0
 
@@ -48,9 +49,5 @@ void print_list();
 // Each tick checks the first process in the heap.
 // If it is to arrive at the current tick then it is sent off as a message body
 // via the mts_event_send
-void mts_tick();
-
-// Handles MTS events
-// Pushes a process into the ready Q when it "arrives"
-void mts_event(int event, Node *process);
+short mts_tick();
 #endif

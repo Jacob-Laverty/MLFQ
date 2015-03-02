@@ -11,10 +11,10 @@ typedef struct BurstStruct {
 typedef struct BurstNodeStruct {
   Burst *burst;
   struct BurstNodeStruct *nextburst;
+
 } BurstNode;
 
-void InitBurst(BurstNode* iterator);
-void SetBurstType(BurstNode* iterator, int type);
-void SetBurstID(BurstNode* iterator, int id);
-void SetBurstDuration(BurstNode* iterator, int duration);
+void SetBurstType(Burst* b, int type);
+void SetBurstID(Burst* b, int id);
+void SetBurstDuration(Burst* b, int duration);
 #endif

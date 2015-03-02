@@ -1,0 +1,448 @@
+Time: 0
+Process 1 arrived
+Ready Queue 1: [ Process 1 ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 0
+Dispatched Process 1
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 30
+Process 2 arrived
+Ready Queue 1: [ Process 2 ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 50
+Demoting PID: 1
+Ready Queue 1: [ Process 2 ]
+Ready Queue 2: [ Process 1 ]
+Ready Queue 3: [  ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 50
+Dispatched Process 2
+Ready Queue 1: [  ]
+Ready Queue 2: [ Process 1 ]
+Ready Queue 3: [  ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 100
+Demoting PID: 2
+Ready Queue 1: [  ]
+Ready Queue 2: [ Process 1, Process 2 ]
+Ready Queue 3: [  ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 100
+Dispatched Process 1
+Ready Queue 1: [  ]
+Ready Queue 2: [ Process 2 ]
+Ready Queue 3: [  ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 170
+Demoting PID: 1
+Ready Queue 1: [  ]
+Ready Queue 2: [ Process 2 ]
+Ready Queue 3: [ Process 1 ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 170
+Dispatched Process 2
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [ Process 1 ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 240
+Demoting PID: 2
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [ Process 1, Process 2 ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 240
+Dispatched Process 1
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [ Process 2 ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 250
+Process 1 finished burst
+Process 1 requested I/O on Device 1
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [ Process 2 ]
+IO Device 1:[ Process 1 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 250
+Dispatched Process 2
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 1 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 350
+Process 2 finished burst
+Process 2 requested I/O on Device 1
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 1, Process 2 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 450
+Process 1: finished IO burst
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 2 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 450
+Process 1 arrived
+Ready Queue 1: [ Process 1 ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 2 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 450
+Dispatched Process 1
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 2 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 500
+Process 1 finished burst
+Process 1 requested I/O on Device 1
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 2, Process 1 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 650
+Process 2: finished IO burst
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 1 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 650
+Process 2 arrived
+Ready Queue 1: [ Process 2 ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 1 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 650
+Dispatched Process 2
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 1 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 700
+Demoting PID: 2
+Ready Queue 1: [  ]
+Ready Queue 2: [ Process 2 ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 1 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 700
+Dispatched Process 2
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 1 ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 730
+Process 2 finished burst
+Process 2 requested I/O on Device 2
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1:[ Process 1 ]
+IO Device 2:[ Process 2 ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 770
+Process 1: finished IO burst
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1: [ ]
+IO Device 2:[ Process 2 ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Time: 980
+Process 2: finished IO burst
+Ready Queue 1: [  ]
+Ready Queue 2: [  ]
+Ready Queue 3: [  ]
+IO Device 1: [ ]
+IO Device 2: [ ]
+IO Device 3: [ ]
+IO Device 4: [ ]
+IO Device 5: [ ]
+IO Device 6: [ ]
+IO Device 7: [ ]
+IO Device 8: [ ]
+IO Device 9: [ ]
+IO Device 10: [ ]
+
+***************
+Average Wait Time 108
+Average Turnaround Time 860
