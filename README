@@ -2,8 +2,11 @@ MFQ Project
 
 Compilation
   cd src/
-  make install
+  make clean install
 
 Running
-  cd src/
-  ./simulation
+  ./src/simulation -f input -o output
+  Input and output are relative file paths.
+
+  Ex. From proj. root dir. a.k.a (the current dir.) 
+  ./src/simulation -f doc/sample_mlfq_input -o doc/sample_mlfq_output
